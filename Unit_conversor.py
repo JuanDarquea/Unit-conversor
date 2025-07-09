@@ -476,6 +476,73 @@ def convert_weight(): # Función para convertir pesos
         print(f"{clave}. {valor}") # Mostrar las opciones de unidades disponibles
 
     origen = input("\nIngrese el número de la unidad de origen: ")
+    if origen not in unidades:
+        print("¡UNIDAD DE ORIGEN NO VALIDA!")
+        return convert_weight()
+
+    destino = input("Ingrese el número de la unidad de destino: ")
+    if destino not in unidades:
+        print("¡UNIDAD DE DESTINO NO VALIDA!")
+        return convert_weight()
+
+    valor = float(input("Ingrese el valor a convertir: "))
+    print(f"\nConvirtiendo {valor} {unidades[origen]} a {unidades[destino]}...")
+
+    # Conversiones
+    if origen == destino:
+        resultado = valor
+    elif origen == "1" and destino == "2": # kg a g
+        resultado = valor * 1000
+    elif origen == "1" and destino == "3": # kg a t
+        resultado = valor / 1000
+    elif origen == "1" and destino == "4": # kg a lb
+        resultado = valor * 2.20462
+    elif origen == "1" and destino == "5": # kg a oz
+        resultado = valor * 35.274
+    elif origen == "2" and destino == "1": # g a kg
+        resultado = valor / 1000
+    elif origen == "2" and destino == "3": # g a t
+        resultado = valor / 1_000_000
+    elif origen == "2" and destino == "4": # g a lb
+        resultado = valor / 453.592
+    elif origen == "2" and destino == "5": # g a oz
+        resultado = valor / 28.3495
+    elif origen == "3" and destino == "1": # t a kg
+        resultado = valor * 1000
+    elif origen == "3" and destino == "2": # t a g
+        resultado = valor * 1_000_000
+    elif origen == "3" and destino == "4": # t a lb
+        resultado = valor * 2204.62
+    elif origen == "3" and destino == "5": # t a oz
+        resultado = valor * 35274
+    elif origen == "4" and destino == "1": # lb a kg
+        resultado = valor / 2.20462
+    elif origen == "4" and destino == "2": # lb a g
+        resultado = valor * 453.592
+    elif origen == "4" and destino == "3": # lb a t
+        resultado = valor / 2204.62
+    elif origen == "4" and destino == "5": # lb a oz
+        resultado = valor * 16
+    elif origen == "5" and destino == "1": # oz a kg
+        resultado = valor / 35.274
+    elif origen == "5" and destino == "2": # oz a g
+        resultado = valor * 28.3495
+    elif origen == "5" and destino == "3": # oz a t
+        resultado = valor / 35274
+    elif origen == "5" and destino == "4": # oz a lb
+        resultado = valor / 16
+    else:
+        print("Conversión no implementada para estas unidades.")
+        return convert_weight()
+
+    print(f"Resultado: {resultado} {unidades[destino]}")
+    print("\n¿Desea realizar otra conversión de peso? (s/n)")
+    otra_conversion = input().lower()
+    if otra_conversion == "s":
+        return convert_weight()
+    else:
+        print("Conversión finalizada.")
+        return
 
 def mostrar_menu(): # Función para mostrar el menú de opciones
     # Mostrar el menú de opciones
@@ -496,7 +563,7 @@ def main(): # Función principal del programa
         if choice == "1":
             convert_distance()
         elif choice == "2":
-            print("convert_weight()")
+            convert_weight()
         elif choice == "3":
             print("convert_temperature()")
         elif choice == "4":

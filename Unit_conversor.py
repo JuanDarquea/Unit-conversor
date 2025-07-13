@@ -488,7 +488,7 @@ def convert_weight(): # Función para convertir pesos
     valor = float(input("Ingrese el valor a convertir: "))
     print(f"\nConvirtiendo {valor} {unidades[origen]} a {unidades[destino]}...")
 
-    # Conversiones
+    # Realizar la conversión (aquí se debe implementar la lógica de conversión)
     if origen == destino:
         resultado = valor
     elif origen == "1" and destino == "2": # kg a g
@@ -543,6 +543,31 @@ def convert_weight(): # Función para convertir pesos
     else:
         print("Conversión finalizada.")
         return
+
+def convert_temperature(): #call temperature conversion function
+    print("\n=== CONVERSIÓN DE TEMPERATURA ===")
+    print("Seleccione la unidad de origen y destino para la conversión.") # Mostrar mensaje de selección de unidades
+    # Definir un diccionario con las unidades de temperatura y sus equivalencias
+    unidades = {
+        "1": "Celsius",
+        "2": "Fahrenheit",
+        "3": "Kelvin"
+    }
+
+    print("\nUnidades disponibles:")
+    for clave, valor in unidades.items(): # llama a las unidades de temperatura y muestra las opciones
+        print(f"{clave}. {valor}") # muestra en pantalla las opciones de unidades disponibles
+    
+    origen = input("\nIngrese el número de la unidad de origen: ") # Solicitar al usuario que ingrese la unidad de origen
+    if origen not in unidades: # en caso de que la unidad de origen no sea válida se presentará un mensaje
+        print("¡El valor seleccionado no existe dentro de las opciones!")
+        return convert_temperature() # Salir de la función si la unidad de origen no es válida
+    destino = input("\nIngrese el número de la unidad de destino: ") # Solicitar al usuario que ingrese la unidad de destino
+    if destino not in unidades: 
+        print("¡El valor seleccionado no existe dentro de las opciones!")
+        return convert_temperature() # Salir de la función si la unidad de destino no es válida
+    valor = float(input("Ingrese el valor a convertir: "))
+    print(f"\nConvirtiendo {valor} {unidades[origen]} a {unidades[destino]}...")
 
 def mostrar_menu(): # Función para mostrar el menú de opciones
     # Mostrar el menú de opciones

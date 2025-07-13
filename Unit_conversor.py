@@ -45,7 +45,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "1" and destino == "3": # Si la unidad de origen es metros y la unidad de destino es kilómetros
         resultado = valor / 1000 # Convertir metros a kilómetros
@@ -55,7 +55,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "1" and destino == "4": # Si la unidad de origen es metros y la unidad de destino es millas
         resultado = valor / 1609.34 # Convertir metros a millas
@@ -65,7 +65,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "1" and destino == "5": # Si la unidad de origen es metros y la unidad de destino es pulgadas
         resultado = valor * 39.3701 # Convertir metros a pulgadas
@@ -75,7 +75,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "1" and destino == "6": # Si la unidad de origen es metros y la unidad de destino es pies
         resultado = valor * 3.28084 # Convertir metros a pies
@@ -85,7 +85,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "1" and destino == "7": # Si la unidad de origen es metros y la unidad de destino es yardas
         resultado = valor * 1.09361 # Convertir metros a yardas
@@ -95,7 +95,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "2" and destino == "1": # Si la unidad de origen es centímetros y la unidad de destino es metros
         resultado = valor / 100 # Convertir centímetros a metros
@@ -105,7 +105,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "2" and destino == "3": # Si la unidad de origen es centímetros y la unidad de destino es kilómetros
         resultado = valor / 100000 # Convertir centímetros a kilómetros
@@ -115,7 +115,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "2" and destino == "4": # Si la unidad de origen es centímetros y la unidad de destino es millas
         resultado = valor / 160934 # Convertir centímetros a millas
@@ -125,7 +125,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "2" and destino == "5": # Si la unidad de origen es centímetros y la unidad de destino es pulgadas
         resultado = valor / 2.54 # Convertir centímetros a pulgadas
@@ -135,7 +135,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "2" and destino == "6": # Si la unidad de origen es centímetros y la unidad de destino es pies
         resultado = valor / 30.48 # Convertir centímetros a pies
@@ -145,7 +145,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "2" and destino == "7": # Si la unidad de origen es centímetros y la unidad de destino es yardas
         resultado = valor / 91.44 # Convertir centímetros a yardas
@@ -155,7 +155,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "3" and destino == "1": # Si la unidad de origen es kilómetros y la unidad de destino es metros
         resultado = valor * 1000 # Convertir kilómetros a metros
@@ -165,7 +165,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "3" and destino == "2": # Si la unidad de origen es kilómetros y la unidad de destino es centímetros
         resultado = valor * 100000 # Convertir kilómetros a centímetros
@@ -175,7 +175,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "3" and destino == "4": # Si la unidad de origen es kilómetros y la unidad de destino es millas
         resultado = valor / 1.60934 # Convertir kilómetros a millas
@@ -185,7 +185,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "3" and destino == "5": # Si la unidad de origen es kilómetros y la unidad de destino es pulgadas
         resultado = valor * 39370.1 # Convertir kilómetros a pulgadas
@@ -195,7 +195,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "3" and destino == "6": # Si la unidad de origen es kilómetros y la unidad de destino es pies
         resultado = valor * 3280.84 # Convertir kilómetros a pies
@@ -205,7 +205,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "3" and destino == "7": # Si la unidad de origen es kilómetros y la unidad de destino es yardas
         resultado = valor * 1093.61 # Convertir kilómetros a yardas
@@ -215,7 +215,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "4" and destino == "1": # Si la unidad de origen es millas y la unidad de destino es metros
         resultado = valor * 1609.34 # Convertir millas a metros
@@ -225,7 +225,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "4" and destino == "2": # Si la unidad de origen es millas y la unidad de destino es centímetros
         resultado = valor * 160934 # Convertir millas a centímetros
@@ -235,7 +235,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "4" and destino == "3": # Si la unidad de origen es millas y la unidad de destino es kilómetros
         resultado = valor * 1.60934 # Convertir millas a kilómetros
@@ -245,7 +245,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "4" and destino == "5": # Si la unidad de origen es millas y la unidad de destino es pulgadas
         resultado = valor * 63360 # Convertir millas a pulgadas
@@ -255,7 +255,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "4" and destino == "6": # Si la unidad de origen es millas y la unidad de destino es pies
         resultado = valor * 5280 # Convertir millas a pies
@@ -265,7 +265,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "4" and destino == "7": # Si la unidad de origen es millas y la unidad de destino es yardas
         resultado = valor * 1760 # Convertir millas a yardas
@@ -275,7 +275,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "5" and destino == "1": # Si la unidad de origen es pulgadas y la unidad de destino es metros
         resultado = valor / 39.3701 # Convertir pulgadas a metros
@@ -285,7 +285,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "5" and destino == "2": # Si la unidad de origen es pulgadas y la unidad de destino es centímetros
         resultado = valor * 2.54 # Convertir pulgadas a centímetros
@@ -295,7 +295,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "5" and destino == "3": # Si la unidad de origen es pulgadas y la unidad de destino es kilómetros
         resultado = valor / 39370.1 # Convertir pulgadas a kilómetros
@@ -305,7 +305,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "5" and destino == "4": # Si la unidad de origen es pulgadas y la unidad de destino es millas
         resultado = valor / 63360 # Convertir pulgadas a millas
@@ -315,7 +315,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "5" and destino == "6": # Si la unidad de origen es pulgadas y la unidad de destino es pies
         resultado = valor / 12 # Convertir pulgadas a pies
@@ -325,7 +325,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "5" and destino == "7": # Si la unidad de origen es pulgadas y la unidad de destino es yardas
         resultado = valor / 36 # Convertir pulgadas a yardas
@@ -335,7 +335,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "6" and destino == "1": # Si la unidad de origen es pies y la unidad de destino es metros
         resultado = valor / 3.28084 # Convertir pies a metros
@@ -345,7 +345,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "6" and destino == "2": # Si la unidad de origen es pies y la unidad de destino es centímetros
         resultado = valor * 30.48 # Convertir pies a centímetros
@@ -355,7 +355,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "6" and destino == "3": # Si la unidad de origen es pies y la unidad de destino es kilómetros
         resultado = valor / 3280.84 # Convertir pies a kilómetros
@@ -365,7 +365,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "6" and destino == "4": # Si la unidad de origen es pies y la unidad de destino es millas
         resultado = valor / 5280 # Convertir pies a millas
@@ -375,7 +375,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "6" and destino == "5": # Si la unidad de origen es pies y la unidad de destino es pulgadas
         resultado = valor * 12 # Convertir pies a pulgadas
@@ -385,7 +385,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "6" and destino == "7": # Si la unidad de origen es pies y la unidad de destino es yardas
         resultado = valor / 3 # Convertir pies a yardas
@@ -395,7 +395,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "7" and destino == "1": # Si la unidad de origen es yardas y la unidad de destino es metros
         resultado = valor / 1.09361 # Convertir yardas a metros
@@ -405,7 +405,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "7" and destino == "2": # Si la unidad de origen es yardas y la unidad de destino es centímetros
         resultado = valor * 91.44 # Convertir yardas a centímetros
@@ -415,7 +415,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "7" and destino == "3": # Si la unidad de origen es yardas y la unidad de destino es kilómetros
         resultado = valor / 1093.61 # Convertir yardas a kilómetros
@@ -425,7 +425,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "7" and destino == "4": # Si la unidad de origen es yardas y la unidad de destino es millas
         resultado = valor / 1760 # Convertir yardas a millas
@@ -435,7 +435,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "7" and destino == "5": # Si la unidad de origen es yardas y la unidad de destino es pulgadas
         resultado = valor * 36  # Convertir yardas a pulgadas
@@ -445,7 +445,7 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     elif origen == "7" and destino == "6": # Si la unidad de origen es yardas y la unidad de destino es pies
         resultado = valor * 3 # Convertir yardas a pies
@@ -455,11 +455,12 @@ def convert_distance(): # Función para convertir distancias
         if otra_conversion == "s":
             return convert_distance()
         else:
-            print("Conversión finalizada.")
+            print("\nConversión finalizada.")
             return
     else:
         print("Conversión no implementada para estas unidades.")
         return convert_distance() # Salir de la función si la conversión no está implementada
+    
 def convert_weight(): # Función para convertir pesos
     print("\n=== CONVERSIÓN DE PESO ===")
     print("Seleccione la unidad de origen y destino para la conversión.") # Mostrar mensaje de selección de unidades
@@ -541,7 +542,7 @@ def convert_weight(): # Función para convertir pesos
     if otra_conversion == "s":
         return convert_weight()
     else:
-        print("Conversión finalizada.")
+        print("\nConversión finalizada.")
         return
 
 def convert_temperature(): #call temperature conversion function
@@ -557,17 +558,43 @@ def convert_temperature(): #call temperature conversion function
     print("\nUnidades disponibles:")
     for clave, valor in unidades.items(): # llama a las unidades de temperatura y muestra las opciones
         print(f"{clave}. {valor}") # muestra en pantalla las opciones de unidades disponibles
-    
+
     origen = input("\nIngrese el número de la unidad de origen: ") # Solicitar al usuario que ingrese la unidad de origen
     if origen not in unidades: # en caso de que la unidad de origen no sea válida se presentará un mensaje
         print("¡El valor seleccionado no existe dentro de las opciones!")
         return convert_temperature() # Salir de la función si la unidad de origen no es válida
-    destino = input("\nIngrese el número de la unidad de destino: ") # Solicitar al usuario que ingrese la unidad de destino
+    destino = input("Ingrese el número de la unidad de destino: ") # Solicitar al usuario que ingrese la unidad de destino
     if destino not in unidades: 
         print("¡El valor seleccionado no existe dentro de las opciones!")
         return convert_temperature() # Salir de la función si la unidad de destino no es válida
     valor = float(input("Ingrese el valor a convertir: "))
     print(f"\nConvirtiendo {valor} {unidades[origen]} a {unidades[destino]}...")
+
+    if origen == destino:
+        resultado = valor
+    elif origen == "1" and destino == "2": # Celsius a Farenheit
+        resultado = (valor * (9/5)) + 32
+    elif origen == "1" and destino == "3": # Celsius a Kelvin
+        resultado = valor + 273.15
+    elif origen == "2" and destino == "1": # Farenheit a Celsius
+        resultado = (valor - 32) * (5/9)
+    elif origen == "2" and destino == "3": # Farenheit a Kelvin
+        resultado = (valor - 32) * (5/9) + 273.15
+    elif origen == "3" and destino == "1": # Kelvin a Celsius
+        resultado = valor - 273.15
+    elif origen == "3" and destino == "2": # Kelvin a Farenheit
+        resultado = (valor - 273.15) * (9/5) + 32
+    else:
+        print("Conversión no implementada para estas unidades.")
+        return convert_temperature() # Regresar a la función de conversión de temperatura
+    print(f"Resultado: {resultado} {unidades[destino]}")
+    print("\n¿Desea realizar otra conversión de temperatura? (s/n)")
+    otra_conversion = input().lower() # Lower case para aceptar 's' o 'n'
+    if otra_conversion == "s" or otra_conversion == "sí":
+        return convert_temperature()
+    else:
+        print("\nConversión finalizada.")
+        return
 
 def mostrar_menu(): # Función para mostrar el menú de opciones
     # Mostrar el menú de opciones
@@ -590,7 +617,7 @@ def main(): # Función principal del programa
         elif choice == "2":
             convert_weight()
         elif choice == "3":
-            print("convert_temperature()")
+            convert_temperature()
         elif choice == "4":
             print("convert_time()")
         elif choice == "5":

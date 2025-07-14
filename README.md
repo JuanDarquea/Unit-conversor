@@ -1,1 +1,22 @@
 # Unit-conversor
+
+This is a Python made unit converter. It is a learning tool so that I can further advance on my programming career. It has the functions to convert:
+- Distance
+    * Meters
+    * Centimeters
+    * Kilometers
+    * Miles
+    * Inches
+    * Feet
+    * Yards 
+- Weight
+    * Kilograms,
+    * Grams,
+    * Ounces,
+    * Pounds
+    * Tons
+- Temperature
+    * Celsius
+    * Fahrenheit
+    * Kelvin
+- Time (Pending.)

@@ -596,6 +596,130 @@ def convert_temperature(): #call temperature conversion function
         print("\nConversión finalizada.")
         return
 
+def convert_time(): # llamar a la función para calcular tiempo
+    print("\n===CONVERSIÓN DE TIEMPO===")
+    print("Seleccione la unidad de origen y destino para la conversión.")
+    unidades = {
+        "1":"Segundos",
+        "2":"Minutos",
+        "3":"Horas",
+        "4":"Days",
+        "5":"Weeks",
+        "6":"Months",
+        "7":"Years"
+    }
+    print("Unidades disponibles:")
+    for clave, valor in unidades.items():
+        print(f"{clave}.{valor}")
+    origen = input("\nIngrese el número de la unidad de origen: ")
+    if origen not in unidades:
+        print("¡El valor seleccionado no existe dentro de las opciones!")
+        return convert_temperature()
+    destino = input("\nIngrese el número de la unidad de destino")
+    if destino not in unidades:
+        print("¡El valor seleccionado no existe dentro de las opciones!")
+        return convert_temperature()
+    valor = float(input("Ingrese el valor a convertir: "))
+    print(f"\nConvirtiendo {valor} {unidades[origen]} a {unidades[destino]}...")
+
+    if origen == destino:
+        resultado = valor
+    elif origen == "1" and destino == "2": # Segundos a Minutos
+        resultado = valor / 60
+    elif origen == "1" and destino == "3": # Segundos a Horas
+        resultado = valor / 3600
+    elif origen == "1" and destino == "4": # Segundos a Días
+        resultado = valor / 86400
+    elif origen == "1" and destino == "5": # Segundos a Semanas
+        resultado = valor / 604800
+    elif origen == "1" and destino == "6": # Segundos a Meses
+        resultado = valor / 2629800
+    elif origen == "1" and destino == "7": # Segundos a Años
+        resultado = valor / 31557600
+    elif origen == "2" and destino == "1": # Minutos a Segundos
+        resultado = valor * 60
+    elif origen == "2" and destino == "3": # Minutos a Horas
+        resultado = valor / 60
+    elif origen == "2" and destino == "4": # Minutos a Días
+        resultado = valor / 1440
+    elif origen == "2" and destino == "5": # Minutos a Semanas
+        resultado = valor / 10080
+    elif origen == "2" and destino == "6": # Minutos a Meses
+        resultado = valor / 43800
+    elif origen == "2" and destino == "7": # Minutos a Años
+        resultado = valor / 525600
+    elif origen == "3" and destino == "1": # Horas a Segundos
+        resultado = valor * 3600
+    elif origen == "3" and destino == "2": # Horas a Minutos
+        resultado = valor * 60
+    elif origen == "3" and destino == "4": # Horas a Días
+        resultado = valor / 24
+    elif origen == "3" and destino == "5": # Horas a Semanas
+        resultado = valor / 168
+    elif origen == "3" and destino == "6": # Horas a Meses
+        resultado = valor / 730
+    elif origen == "3" and destino == "7": # Horas a Años
+        resultado = valor / 8760
+    elif origen == "4" and destino == "1": # Días a Segundos
+        resultado = valor * 86400
+    elif origen == "4" and destino == "2": # Días a Minutos
+        resultado = valor * 1440
+    elif origen == "4" and destino == "3": # Días a Horas
+        resultado = valor * 24
+    elif origen == "4" and destino == "5": # Días a Semanas
+        resultado = valor / 7
+    elif origen == "4" and destino == "6": # Días a Meses
+        resultado = valor / 30.44
+    elif origen == "4" and destino == "7": # Días a Años
+        resultado = valor / 365.25
+    elif origen == "5" and destino == "1": # Semanas a Segundos
+        resultado = valor * 604800
+    elif origen == "5" and destino == "2": # Semanas a Minutos
+        resultado = valor * 10080
+    elif origen == "5" and destino == "3": # Semanas a Horas
+        resultado = valor * 168
+    elif origen == "5" and destino == "4": # Semanas a Días
+        resultado = valor * 7
+    elif origen == "5" and destino == "6": # Semanas a Meses
+        resultado = valor / 4.34524
+    elif origen == "5" and destino == "7": # Semanas a Años
+        resultado = valor / 52.1775
+    elif origen == "6" and destino == "1": # Meses a Segundos
+        resultado = valor * 2629800
+    elif origen == "6" and destino == "2": # Meses a Minutos
+        resultado = valor * 43800
+    elif origen == "6" and destino == "3": # Meses a Horas
+        resultado = valor * 730
+    elif origen == "6" and destino == "4": # Meses a Días
+        resultado = valor * 30.44
+    elif origen == "6" and destino == "5": # Meses a Semanas
+        resultado = valor * 4.34524
+    elif origen == "6" and destino == "7": # Meses a Años
+        resultado = valor / 12
+    elif origen == "7" and destino == "1": # Años a Segundos
+        resultado = valor * 31557600
+    elif origen == "7" and destino == "2": # Años a Minutos
+        resultado = valor * 525600
+    elif origen == "7" and destino == "3": # Años a Horas
+        resultado = valor * 8760
+    elif origen == "7" and destino == "4": # Años a Días
+        resultado = valor * 365.25
+    elif origen == "7" and destino == "5": # Años a Semanas
+        resultado = valor * 52.1775
+    elif origen == "7" and destino == "6": # Años a Meses
+        resultado = valor * 12
+    else:
+        print("Conversión no implementada para estas unidades.")
+        return convert_time() # Regresar a la función de conversión de tiempo
+    print(f"Resultado: {resultado} {unidades[destino]}")
+    print("\n¿Desea realizar otra conversión de tiempo? (s/n)")
+    otra_conversion = input().lower() # Lower case para aceptar 's' o 'n'
+    if otra_conversion == "s" or otra_conversion == "si":
+        return convert_time()
+    else:
+        print("\nConversión finalizada.")
+        return 
+
 def mostrar_menu(): # Función para mostrar el menú de opciones
     # Mostrar el menú de opciones
     print("=== CONVERSOR DE UNIDADES ===")
@@ -619,7 +743,7 @@ def main(): # Función principal del programa
         elif choice == "3":
             convert_temperature()
         elif choice == "4":
-            print("convert_time()")
+            convert_time()
         elif choice == "5":
             print("\nSaliendo del programa. ¡Hasta luego!")
             break

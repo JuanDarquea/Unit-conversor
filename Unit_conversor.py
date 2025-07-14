@@ -478,12 +478,12 @@ def convert_weight(): # Función para convertir pesos
 
     origen = input("\nIngrese el número de la unidad de origen: ")
     if origen not in unidades:
-        print("¡UNIDAD DE ORIGEN NO VALIDA!")
+        print("\n¡UNIDAD DE ORIGEN NO VALIDA!")
         return convert_weight()
 
     destino = input("Ingrese el número de la unidad de destino: ")
     if destino not in unidades:
-        print("¡UNIDAD DE DESTINO NO VALIDA!")
+        print("\n¡UNIDAD DE DESTINO NO VALIDA!")
         return convert_weight()
 
     valor = float(input("Ingrese el valor a convertir: "))
@@ -533,7 +533,7 @@ def convert_weight(): # Función para convertir pesos
     elif origen == "5" and destino == "4": # oz a lb
         resultado = valor / 16
     else:
-        print("Conversión no implementada para estas unidades.")
+        print("\nConversión no implementada para estas unidades.")
         return convert_weight()
 
     print(f"Resultado: {resultado} {unidades[destino]}")
@@ -561,11 +561,11 @@ def convert_temperature(): #call temperature conversion function
 
     origen = input("\nIngrese el número de la unidad de origen: ") # Solicitar al usuario que ingrese la unidad de origen
     if origen not in unidades: # en caso de que la unidad de origen no sea válida se presentará un mensaje
-        print("¡El valor seleccionado no existe dentro de las opciones!")
+        print("\n¡El valor seleccionado no existe dentro de las opciones!")
         return convert_temperature() # Salir de la función si la unidad de origen no es válida
     destino = input("Ingrese el número de la unidad de destino: ") # Solicitar al usuario que ingrese la unidad de destino
     if destino not in unidades: 
-        print("¡El valor seleccionado no existe dentro de las opciones!")
+        print("\n¡El valor seleccionado no existe dentro de las opciones!")
         return convert_temperature() # Salir de la función si la unidad de destino no es válida
     valor = float(input("Ingrese el valor a convertir: "))
     print(f"\nConvirtiendo {valor} {unidades[origen]} a {unidades[destino]}...")
@@ -585,7 +585,7 @@ def convert_temperature(): #call temperature conversion function
     elif origen == "3" and destino == "2": # Kelvin a Farenheit
         resultado = (valor - 273.15) * (9/5) + 32
     else:
-        print("Conversión no implementada para estas unidades.")
+        print("\nConversión no implementada para estas unidades.")
         return convert_temperature() # Regresar a la función de conversión de temperatura
     print(f"Resultado: {resultado} {unidades[destino]}")
     print("\n¿Desea realizar otra conversión de temperatura? (s/n)")
@@ -603,21 +603,21 @@ def convert_time(): # llamar a la función para calcular tiempo
         "1":"Segundos",
         "2":"Minutos",
         "3":"Horas",
-        "4":"Days",
-        "5":"Weeks",
-        "6":"Months",
-        "7":"Years"
+        "4":"Dias",
+        "5":"Semanas",
+        "6":"Meses",
+        "7":"Años"
     }
     print("Unidades disponibles:")
     for clave, valor in unidades.items():
         print(f"{clave}.{valor}")
     origen = input("\nIngrese el número de la unidad de origen: ")
     if origen not in unidades:
-        print("¡El valor seleccionado no existe dentro de las opciones!")
+        print("\n¡El valor seleccionado no existe dentro de las opciones!")
         return convert_temperature()
-    destino = input("\nIngrese el número de la unidad de destino")
+    destino = input("Ingrese el número de la unidad de destino: ")
     if destino not in unidades:
-        print("¡El valor seleccionado no existe dentro de las opciones!")
+        print("\n¡El valor seleccionado no existe dentro de las opciones!")
         return convert_temperature()
     valor = float(input("Ingrese el valor a convertir: "))
     print(f"\nConvirtiendo {valor} {unidades[origen]} a {unidades[destino]}...")
@@ -709,7 +709,7 @@ def convert_time(): # llamar a la función para calcular tiempo
     elif origen == "7" and destino == "6": # Años a Meses
         resultado = valor * 12
     else:
-        print("Conversión no implementada para estas unidades.")
+        print("\nConversión no implementada para estas unidades.")
         return convert_time() # Regresar a la función de conversión de tiempo
     print(f"Resultado: {resultado} {unidades[destino]}")
     print("\n¿Desea realizar otra conversión de tiempo? (s/n)")

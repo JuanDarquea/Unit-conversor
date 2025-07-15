@@ -19,4 +19,11 @@ This is a Python made unit converter. It is a learning tool so that I can furthe
     * Celsius
     * Fahrenheit
     * Kelvin
-- Time (Pending.)
+- Time
+    * Seconds
+    * Minutes
+    * Hours
+    * Days
+    * Weeks
+    * Months
+    * Years 

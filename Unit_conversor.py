@@ -15,7 +15,7 @@ def clear_screen():
 
 def convert_distance(): # Función para convertir distancias
     clear_screen() # Limpiar la pantalla al inicio de la función
-    print("\n=== CONVERSIÓN DE DISTANCIA ===")
+    print("=== CONVERSIÓN DE DISTANCIA ===")
     print("Seleccione la unidad de origen y destino para la conversión.") # Mostrar mensaje de selección de unidades
     # Definir un diccionario con las unidades de distancia y sus equivalencias
     unidades = {
@@ -514,7 +514,7 @@ def convert_distance(): # Función para convertir distancias
     
 def convert_weight(): # Función para convertir pesos
     clear_screen() # Limpiar la pantalla al inicio de la función
-    print("\n=== CONVERSIÓN DE PESO ===")
+    print("=== CONVERSIÓN DE PESO ===")
     print("Seleccione la unidad de origen y destino para la conversión.") # Mostrar mensaje de selección de unidades
     # Definir un diccionario con las unidades de peso y sus equivalencias
     unidades = {
@@ -600,7 +600,7 @@ def convert_weight(): # Función para convertir pesos
 
 def convert_temperature(): #call temperature conversion function
     clear_screen() # Limpiar la pantalla al inicio de la función
-    print("\n=== CONVERSIÓN DE TEMPERATURA ===")
+    print("=== CONVERSIÓN DE TEMPERATURA ===")
     print("Seleccione la unidad de origen y destino para la conversión.") # Mostrar mensaje de selección de unidades
     # Definir un diccionario con las unidades de temperatura y sus equivalencias
     unidades = {
@@ -653,7 +653,7 @@ def convert_temperature(): #call temperature conversion function
 
 def convert_time(): # llamar a la función para calcular tiempo
     clear_screen() # Limpiar la pantalla al inicio de la función
-    print("\n===CONVERSIÓN DE TIEMPO===")
+    print("===CONVERSIÓN DE TIEMPO===")
     print("Seleccione la unidad de origen y destino para la conversión.")
     unidades = {
         "1":"Segundos",
@@ -664,7 +664,7 @@ def convert_time(): # llamar a la función para calcular tiempo
         "6":"Meses",
         "7":"Años"
     }
-    print("Unidades disponibles:")
+    print("\nUnidades disponibles:")
     for clave, valor in unidades.items():
         print(f"{clave}.{valor}")
     origen = input("\nIngrese el número de la unidad de origen: ")

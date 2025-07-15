@@ -2,9 +2,19 @@
 #from weight import convert_weight # Importar la función de conversión de peso
 #from temperature import convert_temperature # Importar la función de conversión de temperatura
 #from time import convert_time # Importar la función de conversión de temperatura y tiempo
+import os
 
+# Función para limpiar la pantalla
+def clear_screen():
+    # Para Windows
+    if os.name == 'nt':
+        _ = os.system('cls')
+    # Para Mac y Linux
+    else:
+        _ = os.system('clear')
 
 def convert_distance(): # Función para convertir distancias
+    clear_screen() # Limpiar la pantalla al inicio de la función
     print("\n=== CONVERSIÓN DE DISTANCIA ===")
     print("Seleccione la unidad de origen y destino para la conversión.") # Mostrar mensaje de selección de unidades
     # Definir un diccionario con las unidades de distancia y sus equivalencias
@@ -462,6 +472,7 @@ def convert_distance(): # Función para convertir distancias
         return convert_distance() # Salir de la función si la conversión no está implementada
     
 def convert_weight(): # Función para convertir pesos
+    clear_screen() # Limpiar la pantalla al inicio de la función
     print("\n=== CONVERSIÓN DE PESO ===")
     print("Seleccione la unidad de origen y destino para la conversión.") # Mostrar mensaje de selección de unidades
     # Definir un diccionario con las unidades de peso y sus equivalencias
@@ -546,6 +557,7 @@ def convert_weight(): # Función para convertir pesos
         return
 
 def convert_temperature(): #call temperature conversion function
+    clear_screen() # Limpiar la pantalla al inicio de la función
     print("\n=== CONVERSIÓN DE TEMPERATURA ===")
     print("Seleccione la unidad de origen y destino para la conversión.") # Mostrar mensaje de selección de unidades
     # Definir un diccionario con las unidades de temperatura y sus equivalencias
@@ -597,6 +609,7 @@ def convert_temperature(): #call temperature conversion function
         return
 
 def convert_time(): # llamar a la función para calcular tiempo
+    clear_screen() # Limpiar la pantalla al inicio de la función
     print("\n===CONVERSIÓN DE TIEMPO===")
     print("Seleccione la unidad de origen y destino para la conversión.")
     unidades = {
@@ -721,6 +734,7 @@ def convert_time(): # llamar a la función para calcular tiempo
         return 
 
 def mostrar_menu(): # Función para mostrar el menú de opciones
+    clear_screen() # Limpiar la pantalla al inicio de la función
     # Mostrar el menú de opciones
     print("=== CONVERSOR DE UNIDADES ===")
     print("1. Distancia")
@@ -749,6 +763,7 @@ def main(): # Función principal del programa
             break
         else:
             print("\nOpción no válida. Por favor, seleccione una opción del 1 al 5.")
+            input("Presione Enter para continuar...")
 
 if __name__ == "__main__": # Comprobar si el script se está ejecutando directamente
     main() # Llamar a la función principal

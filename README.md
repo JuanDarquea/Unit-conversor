@@ -12,13 +12,15 @@
    - 🧹 Clean Interface: Auto-clears screen for better user experience
 
 ## **🛠️ Requirements**
-   * Python 3.6+ (uses only standard library)
+   * Python 3.+ (uses only standard library)
    * Compatible with Windows, macOS, and Linux
 
 ## **🚀 Usage**
 - Run the program:
-   - *In bash*
-      * python Unit_conversor.py
+```
+Bash
+   python Unit_conversor.py
+```
 - Select conversion type from the main menu:
   
 === CONVERSOR DE UNIDADES ===
@@ -39,7 +41,7 @@
 * Time:	Seconds, Minutes, Hours, Days, Weeks, Months, Years
 
 ## 💡 Example Usage
-**Distance Conversion:**
+#### **Distance Conversion:**
 
 === CONVERSIÓN DE DISTANCIA ===
 
@@ -62,7 +64,7 @@ Ingrese el valor a convertir: 1500
 Resultado: 1.5 kilómetros
 
 
-**Temperature Conversion:**
+#### **Temperature Conversion:**
 
 === CONVERSIÓN DE TEMPERATURA ===
 
